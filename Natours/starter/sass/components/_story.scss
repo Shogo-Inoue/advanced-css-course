@@ -4,14 +4,14 @@
   width: 75%;
   margin: 0 auto;
   box-shadow: 0 3rem 6rem rgba($color-black, 0.1);
-  background-color: rgba($color-white , 0.6);
+  background-color: rgba($color-white, 0.6);
   border-radius: 3px;
   padding: 6rem;
   padding-left: 9rem;
   font-size: $default-font-size;
   transform: skewX(-12deg);
 
-  & >*{
+  & > * {
     transform: skewX(12deg);
   }
 
@@ -28,19 +28,19 @@
     position: relative;
   }
 
-  &__img{
+  &__img {
     height: 100%;
     transform: translateX(-4rem) scale(1.4);
     transition: all .5s;
   }
 
-  &__text{
+  &__text {
     //transform: skewX(12deg);
   }
 
-  &__caption{
+  &__caption {
     position: absolute;
-    top:50%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, 20%);
     color: $color-white;
@@ -51,13 +51,13 @@
     backface-visibility: hidden;
   }
 
-  &:hover &__caption{
+  &:hover &__caption {
     opacity: 1;
-    transform: translate(-50% , -50%);
+    transform: translate(-50%, -50%);
   }
 
-  &:hover &__img{
+  &:hover &__img {
     transform: translateX(-4rem) scale(1);
-    filter:blur(3px) brightness(80%);
+    filter: blur(3px) brightness(80%);
   }
 }
